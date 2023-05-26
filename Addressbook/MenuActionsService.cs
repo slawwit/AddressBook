@@ -4,6 +4,7 @@ namespace Addressbook
 	public class MenuActionsService
 	{
         private List<MenuActions> menuActions;
+
         public MenuActionsService()
         {
             menuActions = new List<MenuActions>();
@@ -15,8 +16,8 @@ namespace Addressbook
             AddMenuAction(2, "Remove person.");
             AddMenuAction(3, "Show all persons.");
             AddMenuAction(4, "Show details of person with given id.");
+            AddMenuAction(0, "Exit.");
             return menuActions;
-
         }
 
         private void AddMenuAction(int id, string name)
