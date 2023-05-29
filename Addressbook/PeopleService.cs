@@ -53,7 +53,7 @@ namespace Addressbook
             People.Add(person);
         }
 
-        public void ShowPersons()
+        public void ShowAllPeople()
         {
             foreach (var person in People)
             {

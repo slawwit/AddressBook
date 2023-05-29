@@ -35,7 +35,7 @@ namespace Adressbook
                         var removeId = peopleService.RemovePersonView();
                         break;
                     case ConsoleKey.D3:
-                        peopleService.ShowPersons();
+                        peopleService.ShowAllPeople();
                         break;
                     case ConsoleKey.D4:
                         var detailsId = peopleService.ShowPersonDetailsView();
