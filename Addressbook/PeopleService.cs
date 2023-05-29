@@ -82,15 +82,15 @@ namespace Addressbook
             }
         }
 
-        public int ShowDetailsPersonView()
+        public int ShowPersonDetailsView()
         {
             Console.WriteLine("Please enter the id of the person you want to show:");
             int personId = GetPersonId();
-            ShowDetailsPerson(personId);
+            ShowPersonDetails(personId);
             return personId;
         }
 
-        private void ShowDetailsPerson(int detailsId)
+        private void ShowPersonDetails(int detailsId)
         {
             foreach (var person in People)
             {

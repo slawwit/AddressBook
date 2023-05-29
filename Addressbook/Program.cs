@@ -38,7 +38,7 @@ namespace Adressbook
                         peopleService.ShowPersons();
                         break;
                     case ConsoleKey.D4:
-                        var detailsId = peopleService.ShowDetailsPersonView();
+                        var detailsId = peopleService.ShowPersonDetailsView();
                         break;
                     case ConsoleKey.D0:
                         Console.WriteLine("Bye");
