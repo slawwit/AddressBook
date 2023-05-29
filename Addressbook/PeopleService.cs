@@ -29,12 +29,6 @@ namespace Addressbook
         {
             Console.WriteLine("Please enter id for new person: ");
             int personId = GetPersonId();
-            AddNewPerson(personId);
-            return personId;
-        }
-
-        private void AddNewPerson(int id)
-        {            
             Console.WriteLine("Please enter firstname for new person:");
             var firstName = Console.ReadLine();
             Console.WriteLine("Please enter lastname for new person:");
@@ -45,11 +39,17 @@ namespace Addressbook
             var phoneNumber = Console.ReadLine();
             Console.WriteLine();
             Person person = new Person();
-            person.Id = id;
+            person.Id = personId;
             person.FirstName = firstName;
             person.LastName = lastName;
             person.Email = email;
             person.PhoneNumber = phoneNumber;
+            AddNewPerson(person);
+            return personId;
+        }
+
+        private void AddNewPerson(Person person)
+        {            
             People.Add(person);
         }
 
