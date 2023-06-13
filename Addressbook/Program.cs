@@ -1,5 +1,7 @@
 ﻿using System;
 using Addressbook;
+using Addressbook.App.Concrete;
+using Addressbook.App.Managers;
 
 namespace Adressbook
 {
@@ -7,8 +9,9 @@ namespace Adressbook
     {
         static void Main(string[] args)
         {
-            PeopleService peopleService = new PeopleService();
             MenuActionsService menuActionsService = new MenuActionsService();
+            PeopleManager personManager = new PeopleManager();
+
             var menu = menuActionsService.GetMenuActions();
             Console.WriteLine("Welcome to addressbook app.");
             var operation = new ConsoleKeyInfo();
@@ -29,16 +32,16 @@ namespace Adressbook
                 switch (operation.Key)
                 {
                     case ConsoleKey.D1:
-                        var id = peopleService.AddNewPersonView();
+                        var newId = personManager.AddNewPerson();
                         break;
                     case ConsoleKey.D2:
-                        var removeId = peopleService.RemovePersonView();
+                        var removeId = personManager.RemovePerson();
                         break;
                     case ConsoleKey.D3:
-                        peopleService.ShowAllPeople();
+                        personManager.ShowAllPeople();
                         break;
                     case ConsoleKey.D4:
-                        var detailsId = peopleService.ShowPersonDetailsView();
+                        var detailsId = personManager.ShowPersonDetails();
                         break;
                     case ConsoleKey.D0:
                         Console.WriteLine("Bye");

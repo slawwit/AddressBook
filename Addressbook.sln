@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1705.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addressbook", "Addressbook\Addressbook.csproj", "{BC3CA92F-4EC0-448E-8380-06487E8EDE53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addressbook.App", "Addressbook.App\Addressbook.App.csproj", "{49C9DF0F-DB1A-4CC0-9A65-83D087BCC77F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addressbook.Domain", "Addressbook.Domain\Addressbook.Domain.csproj", "{9FEBCE5C-5159-4E67-9994-F9D66B6374D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BC3CA92F-4EC0-448E-8380-06487E8EDE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC3CA92F-4EC0-448E-8380-06487E8EDE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC3CA92F-4EC0-448E-8380-06487E8EDE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C9DF0F-DB1A-4CC0-9A65-83D087BCC77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C9DF0F-DB1A-4CC0-9A65-83D087BCC77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C9DF0F-DB1A-4CC0-9A65-83D087BCC77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C9DF0F-DB1A-4CC0-9A65-83D087BCC77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FEBCE5C-5159-4E67-9994-F9D66B6374D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEBCE5C-5159-4E67-9994-F9D66B6374D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEBCE5C-5159-4E67-9994-F9D66B6374D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEBCE5C-5159-4E67-9994-F9D66B6374D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Abstrack\" />
+    <None Remove="Concrete\" />
+    <None Remove="Common\" />
+    <None Remove="Managers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstrack\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="Common\" />
+    <Folder Include="Managers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Addressbook.Domain\Addressbook.Domain.csproj" />
+  </ItemGroup>
+</Project>
