@@ -10,7 +10,7 @@ namespace Adressbook
         static void Main(string[] args)
         {
             MenuActionsService menuActionsService = new MenuActionsService();
-            PeopleManager personManager = new PeopleManager();
+            PeopleManager peopleManager = new PeopleManager();
 
             var menu = menuActionsService.GetMenuActions();
             Console.WriteLine("Welcome to addressbook app.");
@@ -23,7 +23,6 @@ namespace Adressbook
                 for (int i = 0; i < menu.Count; i++)
                 {
                     Console.WriteLine($"{menu[i].Id}. {menu[i].Name}");
-
                 }
                 Console.WriteLine();
                 operation = Console.ReadKey();
@@ -32,16 +31,16 @@ namespace Adressbook
                 switch (operation.Key)
                 {
                     case ConsoleKey.D1:
-                        var newId = personManager.AddNewPerson();
+                        var newId = peopleManager.AddNewPerson();
                         break;
                     case ConsoleKey.D2:
-                        var removeId = personManager.RemovePerson();
+                        var removeId = peopleManager.RemovePerson();
                         break;
                     case ConsoleKey.D3:
-                        personManager.ShowAllPeople();
+                        peopleManager.ShowAllPeople();
                         break;
                     case ConsoleKey.D4:
-                        var detailsId = personManager.ShowPersonDetails();
+                        var detailsId = peopleManager.ShowPersonDetails();
                         break;
                     case ConsoleKey.D0:
                         Console.WriteLine("Bye");
