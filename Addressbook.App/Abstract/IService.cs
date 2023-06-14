@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Addressbook.App.Abstrack
+namespace Addressbook.App.Abstract
 {
     public interface IService<T>
     {

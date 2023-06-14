@@ -7,13 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Abstrack\" />
     <None Remove="Concrete\" />
     <None Remove="Common\" />
     <None Remove="Managers\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstrack\" />
     <Folder Include="Concrete\" />
     <Folder Include="Common\" />
     <Folder Include="Managers\" />

@@ -31,16 +31,16 @@ namespace Adressbook
                 switch (operation.Key)
                 {
                     case ConsoleKey.D1:
-                        var newId = peopleManager.AddNewPerson();
+                        peopleManager.AddNewPerson();
                         break;
                     case ConsoleKey.D2:
-                        var removeId = peopleManager.RemovePerson();
+                        peopleManager.RemovePerson();
                         break;
                     case ConsoleKey.D3:
                         peopleManager.ShowAllPeople();
                         break;
                     case ConsoleKey.D4:
-                        var detailsId = peopleManager.ShowPersonDetails();
+                        peopleManager.ShowPersonDetails();
                         break;
                     case ConsoleKey.D0:
                         Console.WriteLine("Bye");

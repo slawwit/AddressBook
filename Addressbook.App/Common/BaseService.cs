@@ -1,5 +1,5 @@
 ﻿using System;
-using Addressbook.App.Abstrack;
+using Addressbook.App.Abstract;
 using Addressbook.Domain.Common;
 
 namespace Addressbook.App.Common
