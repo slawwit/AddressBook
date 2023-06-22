@@ -10,7 +10,8 @@ namespace Adressbook
         static void Main(string[] args)
         {
             MenuActionsService menuActionsService = new MenuActionsService();
-            PeopleManager peopleManager = new PeopleManager();
+            PeopleService peopleService = new PeopleService();
+            PeopleManager peopleManager = new PeopleManager(peopleService);
 
             var menu = menuActionsService.GetMenuActions();
             Console.WriteLine("Welcome to addressbook app.");

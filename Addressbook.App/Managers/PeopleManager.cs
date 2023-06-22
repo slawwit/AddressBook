@@ -1,4 +1,5 @@
 ﻿using System;
+using Addressbook.App.Abstract;
 using Addressbook.App.Concrete;
 using Addressbook.Domain.Entity;
 
@@ -6,10 +7,11 @@ namespace Addressbook.App.Managers
 {
     public class PeopleManager
     {
-        private PeopleService _peopleService;
-        public PeopleManager()
+        //private PeopleService _peopleService;
+        private IService<Person> _peopleService;
+        public PeopleManager(IService<Person> peopleService)
         {
-            _peopleService = new PeopleService();
+            _peopleService = peopleService;
         }
 
         public int GetPersonId()
@@ -78,6 +80,12 @@ namespace Addressbook.App.Managers
             Console.WriteLine("----------------------");
 
             return personId;
+        }
+
+        public Person GetItemById(int id)
+        {
+            var person = _peopleService.GetItemById(id);
+            return person;
         }
     }
 }
