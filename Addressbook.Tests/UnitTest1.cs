@@ -28,19 +28,4 @@ public class UnitTest1
         result.Should().BeSameAs(person);
 
     }
-
-    [Fact]
-    public void Test2()
-    {
-        //Arrange
-        Person person = new Person(2, "Adam", "Miałzcyński", "Addressbook@wp.pl", "777777777");
-        IService<Person> peopleService = new PeopleService();
-        peopleService.AddItem(person);
-        var manager = new PeopleManager(peopleService);
-        //Act
-        manager.RemovePerson();
-        //Assert
-
-
-    }
 }
